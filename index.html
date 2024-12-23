@@ -1,49 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>https://vietnamvd.github.io/sad</title>
-    <!-- Open Graph tags for social media sharing -->
-    <meta property="og:title" content="https://vietnamvd.github.io/sad">
-    <meta property="og:description" content="https://vietnamvd.github.io/sad">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vietnamvd.github.io/sad">
-    <link rel="canonical" href="https://vietnamvd.github.io/sad">
-
-    <!-- Page description (meta description) -->
-    <meta name="description" content="https://vietnamvd.github.io/sad">
-
-    <!-- Keywords (meta keywords) -->
-    <meta name="keywords" content="https://vietnamvd.github.io/sad">
-
-    <!-- Robots tag to allow search engines to index this page -->
-    <meta name="robots" content="index, follow">
-
-    <!-- Structured data (JSON-LD) for better SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "WebSite",
-        "url": "https://vietnamvd.github.io/sad",
-        "name": "https://vietnamvd.github.io/sad",
-        "description": "https://vietnamvd.github.io/sad"
-    }
+    <script type="text/javascript">
+        // Hàm thêm trạng thái mới vào history và ngăn quay lại
+        function preventBack() {
+            window.history.pushState(null, null, window.location.href);
+        }
+    
+        window.onload = function() {
+            // Khi trang được tải, thêm trạng thái vào history
+            preventBack();
+    
+            // Chặn sự kiện "popstate" khi người dùng nhấn nút quay lại hoặc sử dụng cử chỉ
+            window.onpopstate = function(event) {
+                preventBack(); // Thêm lại trạng thái
+                alert('You cannot go back to the previous page :)) ');
+    
+                // Điều hướng lại trang hiện tại
+                window.location.href = window.location.href;
+            };
+        };
+    
+        // Lắng nghe sự kiện "popstate" cho các trường hợp phím tắt hoặc cử chỉ quay lại
+        window.addEventListener('popstate', function(event) {
+            preventBack(); // Thêm lại trạng thái
+            alert('You cannot go back to the previous page :)) ');
+    
+            // Điều hướng lại trang hiện tại
+            window.location.href = window.location.href;
+        });
+    
+        // Nếu người dùng cố gắng thoát khỏi trang bằng cách khác, luôn giữ họ ở trang hiện tại
+        window.onbeforeunload = function() {
+            preventBack(); // Đảm bảo trạng thái luôn được thêm lại khi thoát trang
+        };
     </script>
+    
+   
 
-    <meta charset="UTF-8">
+    <!-- Style for tabs -->
+    
+        <!-- Thẻ robots cho phép công cụ tìm kiếm lập chỉ mục trang này -->
+  <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>https://vietnamvd.github.io/sad</title>
+    <title>YOU WILL LIKE IT</title>
+    <meta name="description" content="ghost scare troll games, ghost scare video clips, and many interesting things about the world of ghost scares!">
+    <meta name="keywords" content="ghost scare, ghost scare game, ghost scare meme, ghost scare video, ghost scare clip, ghost scare troll, ghost scare website, ghost scare link, ghost scare game">
+    <meta name="author" content="Ghost Scare Team">
+    <meta property="og:title" content="Screenshot">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="photo">
+    <meta name="twitter:title" content="Screenshot">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Inter", sans-serif;
+            overflow: auto; /* Allow scrolling */
+            background-color: #ff0000; /* Nền tối */
+            color: rgb(132, 94, 194);
+        }
 
-    <!-- Redirect script -->
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #222222; /* Nền tối */
+            z-index: 2;
+            overflow: auto; /* Ensure scrolling within overlay if content overflows */
+        }
+
+        .scare {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            z-index: 1;
+            display: none; /* Hide video by default */
+        }
+
+        .overlay-body {
+            text-align: center;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        p.overlay-title {
+            font-size: 2rem;
+            font-weight: 900;
+            color: black;
+            line-height: 1.2;
+            margin: 0 0 16px 0;
+        }  .ads, .content {
+            padding: 0px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .ads {
+            width: 160px;
+            text-align: center;
+        }
+
+
+        p.overlay-description {
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.7);
+            line-height: 1.5;
+            margin: 0 0 16px 0;
+        }
+
+        .overlay-button {
+            display: inline-flex;
+            align-items: center;
+            height: 40px;
+            padding: 0 24px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 4px;
+            margin: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #accept-button {
+            background-color: #444444; /* Nút màu xám đậm */
+            color: white;
+        }
+
+        #decline-button {
+            color: rgb(132, 94, 194);
+            border: 2px solid rgb(132, 94, 194);
+        }
+
+        .overlay-buttons-wrapper {
+            margin: 24px 0;
+        }
+
+        a.overlay-link {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgb(132, 94, 194);
+            position: relative;
+            margin-top: 16px;
+        }
+
+        a.overlay-link::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: -4px;
+            left: -4px;
+            background-color: rgba(132, 94, 194, 0.1);
+            z-index: -1;
+        }
+
+        video#video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        video#video::-webkit-media-controls-enclosure {
+            display: none !important;
+        }
+
+        .report-section {
+            margin: 24px 0;
+            font-size: 1rem;
+            color: black;
+        }
+
+        .report-section a {
+            color: rgb(132, 94, 194);
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            p.overlay-title {
+                font-size: 1.5rem;
+            }
+
+            p.overlay-description {
+                font-size: 0.875rem;
+            }
+
+            .overlay-button {
+                font-size: 0.875rem;
+            }
+        }
+   
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+    </style>
+
+    <!-- JavaScript to handle country detection and tab switching -->
     <script>
-        setTimeout(function() {
-            window.location.href = "https://australiavd.github.io/sad";
-        }, 1000); // 1 second delay
+        async function fetchUserIP() {
+            try {
+                const response = await fetch('https://get.geojs.io/v1/ip/country.jsonn'); // Reliable IP API
+                if (!response.ok) throw new Error('Failed to fetch IP data');
+
+                const data = await response.json();
+                const country = data.country;
+
+                if (country === 'VvN') { // Vietnam
+                    activateTab('tab2'); // Activate Tab 2
+                } else {
+                    activateTab('tab1'); // Activate Tab 1 for other countries
+                }
+            } catch (error) {
+                console.error('Error fetching IP data:', error);
+                activateTab('tab1'); // Default to Tab 1 if API fails
+            }
+        }
+
+        function activateTab(tabId) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            const activeTab = document.getElementById(tabId);
+            if (activeTab) activeTab.classList.add('active');
+        }
+
+        // Fetch IP on page load
+        document.addEventListener('DOMContentLoaded', fetchUserIP);
     </script>
 </head>
 <body>
-    <p>https://vietnamvd.github.io/sad</p>
-    <h1>https://vietnamvd.github.io/sad</h1>
-<h2>https://vietnamvd.github.io/sad</h2>
-    <h3>https://vietnamvd.github.io/sad</h3>
+    <!-- Tab 1: Default content -->
+    <div id="tab1" class="tab">
+
+        <div id="overlay" class="overlay">
+            <div id="overlay" class="overlay">
+                <div class="overlay-body"> 
+                    <div id="google_translate_element" style="position: fixed; top: 10px; left: 10px;"></div>
+                    <p class="overlay-title" style="color: #ed6969;margin-top: 150px;">CONTENT 18+</p>              
+                       <div class="overlay-buttons-wrapper">
+                            <br> <p>The content you are about to encounter is a psychological challenge not meant for everyone. The images, words, and sounds you’re about to experience could cause nightmares, panic attacks, strokes, or even death in individuals with weak hearts, the elderly, children, or anyone prone to nervous breakdowns.</p>
+                                           <a id="accept-button"  href="https://ibvoiminh.blogspot.com/"  class="overlay-button" style="color: #ed6969;"> "read more" </a>
+                      
+                <a id="decline-button" class="overlay-button" href="https://ibvoiminh.blogspot.com/" style="color: #ed6969;"> "watch video" </a>
+                    </div>
+                    <div class="report-section">
+                        <a href="https://ibvoiminh.blogspot.com/">HOME</a> <BR> <BR>
+                        <a href="https://ibvoiminh.blogspot.com/"> SEE MORE</a>
+                    </div>
+        
+                    <p style="color:red">Share this website with your friends : https://vietnamvds.github.io/sad </p>
+                   
+                
+            </div>
+        </div>
+ 
+        <script type="text/javascript">
+            const video = document.getElementById("video");
+            const overlay = document.getElementById("overlay");
+            const declineButton = document.getElementById("decline-button");
+            const acceptButton = document.getElementById("accept-button");
+    
+            let hasClicked = false;
+    
+            window.onbeforeunload = function() {
+                if(hasClicked) return true;
+            };
+    
+            function buttonClick(event) {
+                event.preventDefault();
+                if(!hasClicked) hasClicked = true;
+                overlay.style.display = 'none'; // Hide overlay
+                document.querySelector('.scare').style.display = 'block'; // Show video
+                video.play().then(() => {
+                    // Video playback started successfully
+                    console.log('Video playback started');
+                }).catch((error) => {
+                    // Handle video playback error
+                    console.error('Error attempting to play video:', error);
+                });
+                videoClick();
+            }
+    
+            function videoClick(event) {
+                if(event) event.preventDefault();
+                const { documentElement } = document;
+                if(documentElement.requestFullscreen) documentElement.requestFullscreen();
+                else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+                else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+                else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
+            }
+    
+            acceptButton.addEventListener("click", buttonClick);
+            declineButton.addEventListener("click", buttonClick);
+            video.addEventListener("click", videoClick);
+        </script>
+    
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GN35H5C0X9"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'G-GN35H5C0X9');
+        </script>
+    
+  
+    </div>
+
+    <!-- Tab 2: Vietnam-specific content -->
+    <div id="tab2" class="tab">
+        <div id="overlay" class="overlay">
+            <div class="overlay-body"> 
+                <div id="google_translate_element" style="position: fixed; top: 10px; left: 10px;"></div>
+                <p class="overlay-title" style="color: #ed6969;margin-top: 150px;">CONTENT 18+</p>              
+                   <div class="overlay-buttons-wrapper">
+                        <br> <p>The content you are about to encounter is a psychological challenge not meant for everyone. The images, words, and sounds you’re about to experience could cause nightmares, panic attacks, strokes, or even death in individuals with weak hearts, the elderly, children, or anyone prone to nervous breakdowns.</p>
+                                       <a id="accept-button"  href="https://ibvoiminh.blogspot.com/"  class="overlay-button" style="color: #ed6969;"> "read more" </a>
+                  
+            <a id="decline-button" class="overlay-button" href="https://ibvoiminh.blogspot.com/" style="color: #ed6969;"> "watch video" </a>
+                </div>
+                <div class="report-section">
+                    <a href="https://ibvoiminh.blogspot.com/">HOME</a> <BR> <BR>
+                    <a href="https://ibvoiminh.blogspot.com/"> SEE MORE</a>
+                </div>
+    
+                <p style="color:red">Share this website with your friends : https://vietnamvds.github.io/sad </p>
+               
+            
+        </div>
+    </div>
+
+    
+
+<style>
+    .fullscreen-ad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  text-align: center;
+  transition: opacity 4000000000000s ease;
+  opacity: 1;
+}
+
+  </style>     
+
 </body>
 </html>
